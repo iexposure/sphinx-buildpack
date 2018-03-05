@@ -16,7 +16,7 @@ echo "-----> Installing Sphinx"
 mkdir -p $BIN_DIR
 
 echo Vendoring $URL | indent
-curl -s $URL | tar -xz -C $SPHINX_DIR
+curl -s $URL | tar -xz -C $SPHINX_DIR --strip-components=1
 
 echo Moving binary | indent
 mv $SPHINX_DIR/bin/* $BIN_DIR/
