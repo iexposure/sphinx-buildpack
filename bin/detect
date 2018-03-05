@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# bin/detect <build-dir>
+
+echo "sphinx-3.0.2-2592786-linux-amd64.tar.gz"
+exit 0
