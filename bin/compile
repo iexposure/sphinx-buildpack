@@ -8,7 +8,7 @@ indent() {
 echo "-----> Installing Sphinx 3.0.2"
 BUILD_DIR=$1
 SPHINX_DIR=$BUILD_DIR/vendor/sphinx
-BIN_DIR=$SPHINX_DIR/bin
+BIN_DIR=$(pwd)/vendor/sphinx/bin
 PROFILED_DIR=$BUILD_DIR/.profile.d
 URL="http://sphinxsearch.com/files/sphinx-3.0.2-2592786-linux-amd64.tar.gz"
 
