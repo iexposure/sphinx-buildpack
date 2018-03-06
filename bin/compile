@@ -5,16 +5,15 @@ indent() {
   sed -u 's/^/       /'
 }
 
+echo "-----> Installing Sphinx 3.0.2"
 BUILD_DIR=$1
 SPHINX_DIR=$BUILD_DIR/vendor/sphinx
 BIN_DIR=$SPHINX_DIR/bin
 PROFILED_DIR=$BUILD_DIR/.profile.d
 URL="http://sphinxsearch.com/files/sphinx-3.0.2-2592786-linux-amd64.tar.gz"
 
-echo "-----> Installing Sphinx"
-mkdir -p $SPHINX_DIR
-
 echo Vendoring $URL | indent
+mkdir -p $SPHINX_DIR
 curl -s $URL | tar -xz -C $SPHINX_DIR --strip-components=1
 
 echo Setting PATH | indent
