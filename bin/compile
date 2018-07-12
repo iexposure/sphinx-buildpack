@@ -9,7 +9,7 @@ echo "-----> Installing Sphinx 3.0.2"
 BUILD_DIR=$1
 SPHINX_DIR=$BUILD_DIR/vendor/sphinx
 PROFILED_DIR=$BUILD_DIR/.profile.d
-URL="http://sphinxsearch.com/files/sphinx-3.0.2-2592786-linux-amd64.tar.gz"
+URL="http://sphinxsearch.com/files/sphinx-3.0.3-facc3fb-linux-amd64.tar.gz"
 
 echo Vendoring $URL | indent
 mkdir -p $SPHINX_DIR
