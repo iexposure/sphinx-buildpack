@@ -5,7 +5,7 @@ indent() {
   sed -u 's/^/       /'
 }
 
-echo "-----> Installing Sphinx 3.0.2"
+echo "-----> Installing Sphinx 3.0.3"
 BUILD_DIR=$1
 SPHINX_DIR=$BUILD_DIR/vendor/sphinx
 PROFILED_DIR=$BUILD_DIR/.profile.d
